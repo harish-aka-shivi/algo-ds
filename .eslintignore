@@ -1,0 +1,13 @@
+ckeditor5
+public/index-embed*
+craco.config.js
+storybook-static
+build
+
+# dev experience, ignores codegen plugins in vanillaJs
+codegen/*.plugin.js
+
+# ignore generated files
+src/graphql/exports/**/*
+
+eslint-plugins
