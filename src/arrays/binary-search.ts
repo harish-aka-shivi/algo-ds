@@ -1,3 +1,18 @@
+/* 
+## Binary search
+
+---
+
+Time Complexity
+
+1 iter => N ~ N/2^0
+2 iter => N/2 ~ N/2^1
+k iter => N/2^k
+
+Log(N)
+
+
+Discussion
 Binary search is often a topic that's easy to be explained on the abstract level, but when it comes to writing bug free implementations, it's rather difficult.
 
 Some of the most common problems include:
@@ -152,4 +167,54 @@ Don't overflow the mid calculation
 Shrink boundary using a logic that will exclude mid
 Avoid infinity loop by picking the correct mid and shrinking logic
 Always think of the case when there are 2 elements left
-Because this problem is a failrly easy, the implementions may be pretty straight forward and you may wonder why do I need so many rules. However, binary search problems can get much much more complex, and without consistent rules, it's very hard to write predictable code. In the end, I would say everybody has their own style of binary serach, find the style that works for you!
+Because this problem is a failrly easy, the implementions may
+ be pretty straight forward and you may wonder why do I need so 
+many rules. However, binary search problems can
+ get much much more complex, and without consistent rules, it's 
+ very hard to write predictable code. In the end, I would say 
+ everybody has their own style of binary serach, find the style that works for you!
+
+*/
+
+const searchRecursive = (nums: number[], target: number): number => {
+  const length = nums.length;
+  const middle = Math.trunc(length / 2);
+  const middleValue = nums[middle];
+  if (length < 1) {
+    return -1;
+  }
+  if (middle >= length - 1) {
+    return middleValue === target ? middle : -1;
+  }
+  if (middleValue === target) {
+    return middle;
+  } else if (middleValue > target) {
+    return search(nums.slice(0, middle), target);
+  } else {
+    const res = search(nums.slice(middle, length), target);
+    return res === -1 ? -1 : middle + res;
+  }
+};
+
+const searchIter = (nums: number[], target: number): number => {
+  let initial = 0;
+  let end = nums.length - 1;
+
+  while (initial <= end) {
+    const mid = Math.trunc((end + initial) / 2);
+    const midValue = nums[mid];
+    if (midValue === target) {
+      return mid;
+    } else if (midValue > target) {
+      end = mid - 1;
+    } else {
+      initial = mid + 1;
+    }
+  }
+  return -1;
+};
+
+export function search(nums: number[], target: number): number {
+  // return searchRecursive(nums, target)
+  return searchIter(nums, target);
+}
