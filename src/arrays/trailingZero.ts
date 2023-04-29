@@ -1,3 +1,5 @@
+/* 
+
 Given an integer n, return the number of trailing zeroes in n!.
 
 Note that n! = n * (n - 1) * (n - 2) * ... * 3 * 2 * 1.
@@ -23,3 +25,19 @@ Output: 0
 Constraints:
 
 0 <= n <= 104
+
+*/
+
+const trailingZeroes = (n: number): number => {
+  let i = n;
+  let zeroCount = 0;
+  while (i > 0) {
+    let j = i;
+    while (j % 5 === 0) {
+      zeroCount++;
+      j = j / 5;
+    }
+    i -= 1;
+  }
+  return zeroCount;
+};
