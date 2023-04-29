@@ -1,15 +1,16 @@
-class Node {
+//TODO: export this linked list from linkedList.ts
+class NodeObj {
   value: number;
-  next: Node | null;
+  next: NodeObj | null;
   constructor(value: number) {
     this.value = value;
     this.next = null;
   }
 }
 
-export class LinkedList {
-  head: Node | null = null;
-  tail: Node | null = null;
+class LinkedList {
+  head: NodeObj | null = null;
+  tail: NodeObj | null = null;
 
   get(index: number): number {
     let i = 0;
@@ -25,12 +26,12 @@ export class LinkedList {
 
   prepend(val: number): void {
     if (this.head === null) {
-      const newNode = new Node(val);
+      const newNode = new NodeObj(val);
       newNode.next = null;
       this.head = newNode;
       this.tail = newNode;
     } else {
-      const newNode = new Node(val);
+      const newNode = new NodeObj(val);
       newNode.next = this.head;
       this.head = newNode;
     }
@@ -46,7 +47,7 @@ export class LinkedList {
       return;
     }
 
-    const newNode = new Node(val);
+    const newNode = new NodeObj(val);
     newNode.next = null;
     this.tail.next = newNode;
     this.tail = newNode;
@@ -81,7 +82,7 @@ export class LinkedList {
     }
 
     if (node) {
-      const newNode = new Node(val);
+      const newNode = new NodeObj(val);
       newNode.next = node.next;
 
       node.next = newNode;
@@ -157,17 +158,57 @@ export class LinkedList {
   }
 }
 
-// const obj = new LinkedList();
-// obj.addAtHead(1);
-// obj.addAtHead(3);
-// obj.addAtTail(4);
-// obj.addAtTail(6);
-// obj.addAtIndex(2, 10);
-// // obj.deleteAtIndex(0);
-// obj.print();
-// // console.log(obj.search(3));
-// // console.log(obj.search(8));
-// obj.popFront();
-// obj.print();
-// obj.reverse();
-// obj.print();
+class CustomStack {
+  maxSize: number;
+  length = 0;
+  list: LinkedList;
+  constructor(maxSize: number) {
+    this.maxSize = maxSize;
+    this.list = new LinkedList();
+  }
+
+  push(x: number): void {
+    if (this.length < this.maxSize) {
+      this.list.addAtHead(x);
+      this.length++;
+    }
+  }
+
+  pop(): number {
+    const res = this.list.get(0);
+    if (res !== -1) {
+      this.list.deleteAtIndex(0);
+      this.length--;
+    }
+    return res;
+  }
+
+  increment(k: number, val: number): void {
+    let i = 0;
+    const nodes = [];
+    let node = this.list.head;
+
+    const diff = this.length - k;
+    const start = diff < 0 ? 0 : diff;
+
+    while (node) {
+      if (i >= start) {
+        nodes.push(node);
+      }
+      i++;
+      node = node.next;
+    }
+
+    for (const node of nodes) {
+      node.value = node.value + val;
+    }
+  }
+}
+
+/**
+ * Your CustomStack object will be instantiated and called as such:
+ * var obj = new CustomStack(maxSize)
+ * obj.push(x)
+ * var param_2 = obj.pop()
+ * obj.increment(k,val)
+ */
