@@ -183,6 +183,10 @@ class CustomStack {
     return res;
   }
 
+  top(): number {
+    return this.list.get(0);
+  }
+
   increment(k: number, val: number): void {
     let i = 0;
     const nodes = [];

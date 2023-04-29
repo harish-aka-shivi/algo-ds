@@ -17,6 +17,11 @@ export class Stack {
     return res === undefined ? -1 : res;
   }
 
+  top(): number {
+    const res = this.arr[this.arr.length - 1];
+    return res === undefined ? -1 : res;
+  }
+
   increment(k: number, val: number): void {
     const end = this.arr.length <= k ? this.arr.length : k;
 
