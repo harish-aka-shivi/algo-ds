@@ -55,6 +55,7 @@ const coinChangeHelper = (coins: number[], amount: number, memo: Record<string, 
 
   return Math.min(...mins);
 };
+
 function coinChange(coins: number[], amount: number): number {
   return coinChangeHelper(coins, amount, {});
 }
