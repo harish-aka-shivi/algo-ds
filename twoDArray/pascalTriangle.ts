@@ -25,7 +25,7 @@ Constraints:
 */
 
 const generateItem = (previousItem: number[]): number[] => {
-  const ans = [];
+  const ans = [] as number[];
   for (let i = 0; i < previousItem.length - 1; i++) {
     ans.push(previousItem[i] + previousItem[i + 1]);
   }
@@ -33,7 +33,7 @@ const generateItem = (previousItem: number[]): number[] => {
 };
 
 export function generate(numRows: number): number[][] {
-  const res = [];
+  const res = [] as number[][];
 
   if (numRows === 1) {
     return [[1]];
