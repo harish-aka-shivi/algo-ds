@@ -218,3 +218,5 @@ export function search(nums: number[], target: number): number {
   // return searchRecursive(nums, target)
   return searchIter(nums, target);
 }
+
+// console.log(search([3, 2, 4, 5, 32, 21, 3], 21));
