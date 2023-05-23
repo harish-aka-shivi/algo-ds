@@ -240,6 +240,66 @@ function isSymmetric(root: BinaryTreeNode | null): boolean {
   return isMirror(root.left, root.right);
 }
 
+/* 
+
+106. Construct Binary Tree from Inorder and Postorder Traversal
+
+Given two integer arrays inorder and postorder where
+ inorder is the inorder traversal of a binary tree and postorder is the postorder traversal of the same tree,
+ construct and return the binary tree.
+
+*/
+function buildTree(inOrder: number[], postOrder: number[]): BinaryTreeNode | null {
+  if (!inOrder || !postOrder || inOrder.length === 0 || postOrder.length === 0) {
+    return null;
+  }
+
+  const root = postOrder[postOrder.length - 1];
+
+  const rootIndex = inOrder.findIndex((el) => el === root);
+
+  const leftSubTreeInOrder = inOrder.slice(0, rootIndex);
+  const leftSubTreePostOrder = postOrder.slice(0, rootIndex);
+
+  const rightSubTreeInOrder = inOrder.slice(rootIndex + 1);
+  const rightSubTreePostOrder = postOrder.slice(rootIndex, postOrder.length - 1);
+
+  const node = new BinaryTreeNode(root);
+
+  node.left = buildTree(leftSubTreeInOrder, leftSubTreePostOrder);
+  node.right = buildTree(rightSubTreeInOrder, rightSubTreePostOrder);
+
+  return node;
+}
+
+const findFirstSecondMin = (root: BinaryTreeNode | null, map: { firstMin: number; secondMin: number }) => {
+  if (root === null) {
+    return;
+  }
+
+  findFirstSecondMin(root.left, map);
+
+  if (root.value === map.firstMin) {
+  } else if (root.value < map.firstMin) {
+    const temp = map.firstMin;
+    map.firstMin = root.value;
+    map.secondMin = temp;
+  } else if (root.value < map.secondMin) {
+    map.secondMin = root.value;
+  }
+  findFirstSecondMin(root.right, map);
+};
+
+// 671. Second Minimum Node In a Binary Tree
+function findSecondMinimumValue(root: BinaryTreeNode | null): number {
+  const map = { firstMin: Number.MAX_SAFE_INTEGER - 1, secondMin: Number.MAX_SAFE_INTEGER };
+  findFirstSecondMin(root, map);
+  return map.secondMin === Number.MAX_SAFE_INTEGER || map.secondMin === Number.MAX_SAFE_INTEGER - 1
+    ? -1
+    : map.secondMin;
+}
+
+// ---------------
 const input = [1, 2, 4, -1, -1, 5, 7, -1, -1, -1, 3, -1, 6, -1, -1];
 const inputLevelOrder = [1, 2, 3, 4, 5, -1, 6, -1, -1, 7, -1, -1, -1, -1, -1];
 const inputLevelOrder2 = [1, 2, 3, 4, 5, -1, 6, -1, -1, 7, -1, -1, -1, -1, -1];
