@@ -67,7 +67,7 @@ Solutions for leetcode problem that I solve. Language used is typescript
 #### Graph
   - Graph using adjacency list implementation | bfs | dfs [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/dataStructures/graph.ts)
 
-  - Graph using node class [Solution] (https://github.com/harish-aka-shivi/algo-ds/blob/main/dataStructures/graphUsingNode.ts)
+  - Graph using node class [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/dataStructures/graphUsingNode.ts)
 
 #### Heap
   - Implementation [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/dataStructures/heap.ts)
@@ -105,9 +105,9 @@ Solutions for leetcode problem that I solve. Language used is typescript
 
 
 # Recursion
-  - 50. Pow(x, n) [Leetcode](https://leetcode.com/problems/powx-n/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/recursion/powerFunction.ts)
+  - 50: Pow(x, n) [Leetcode](https://leetcode.com/problems/powx-n/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/recursion/powerFunction.ts)
 
-  - 1752. Check if Array Is Sorted and Rotated [Leetcode](https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/recursion/arrayIsSorted.ts)
+  - 1752: Check if Array Is Sorted and Rotated [Leetcode](https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/recursion/arrayIsSorted.ts)
 
 
 # 2d array
