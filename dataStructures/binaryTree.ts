@@ -212,6 +212,34 @@ function minDepth(root: BinaryTreeNode | null): number {
   return min;
 }
 
+const isMirror = (leftTree: BinaryTreeNode | null, rightTree: BinaryTreeNode | null): boolean => {
+  if (leftTree === null || rightTree === null) {
+    if (leftTree === null && rightTree === null) {
+      return true;
+    }
+    return false;
+  }
+
+  const isLeftEqual = isMirror(leftTree.left, rightTree.right);
+  const isRightEqual = isMirror(leftTree.right, rightTree.left);
+
+  const isCurrNodeEqual = leftTree.value === rightTree.value;
+
+  return isLeftEqual && isRightEqual && isCurrNodeEqual;
+};
+
+/* 
+  https://leetcode.com/problems/symmetric-tree/description/
+  Given the root of a binary tree, check whether it is a mirror of itself
+  (i.e., symmetric around its center).
+*/
+function isSymmetric(root: BinaryTreeNode | null): boolean {
+  if (root === null) {
+    return true;
+  }
+  return isMirror(root.left, root.right);
+}
+
 const input = [1, 2, 4, -1, -1, 5, 7, -1, -1, -1, 3, -1, 6, -1, -1];
 const inputLevelOrder = [1, 2, 3, 4, 5, -1, 6, -1, -1, 7, -1, -1, -1, -1, -1];
 const inputLevelOrder2 = [1, 2, 3, 4, 5, -1, 6, -1, -1, 7, -1, -1, -1, -1, -1];
