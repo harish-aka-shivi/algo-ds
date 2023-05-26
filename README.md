@@ -107,6 +107,7 @@ Solutions for leetcode problem that I solve. Language used is typescript
 
   - 2636: Promise Pool [Leetcode](https://leetcode.com/problems/promise-pool/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/nativeJs/promisePool.ts)
 
+  - 2676. Throttle [Leetcode](https://leetcode.com/problems/throttle/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/nativeJs/throttle.ts)
 
 # Recursion
   - 50: Pow(x, n) [Leetcode](https://leetcode.com/problems/powx-n/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/recursion/powerFunction.ts)
