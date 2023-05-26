@@ -112,6 +112,11 @@ Solutions for leetcode problem that I solve. Language used is typescript
   - 2627. Debounce [Leetcode](https://leetcode.com/problems/debounce/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/nativeJs/debounce.ts)
 
   - 2623. Memoize [Leetcode](https://leetcode.com/problems/memoize/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/nativeJs/memoize.ts)
+
+# Two Pointer
+  - 125. Valid Palindrome [Leetcode](https://leetcode.com/problems/valid-palindrome/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/twoPointer/palindrome.ts)
+
+
 # Recursion
   - 50: Pow(x, n) [Leetcode](https://leetcode.com/problems/powx-n/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/recursion/powerFunction.ts)
 
