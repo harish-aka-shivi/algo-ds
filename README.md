@@ -109,8 +109,9 @@ Solutions for leetcode problem that I solve. Language used is typescript
 
   - 2676. Throttle [Leetcode](https://leetcode.com/problems/throttle/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/nativeJs/throttle.ts)
 
-  - 2676. Debounce [Leetcode](https://leetcode.com/problems/debounce/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/nativeJs/debounce.ts)
+  - 2627. Debounce [Leetcode](https://leetcode.com/problems/debounce/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/nativeJs/debounce.ts)
 
+  - 2623. Memoize [Leetcode](https://leetcode.com/problems/memoize/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/nativeJs/memoize.ts)
 # Recursion
   - 50: Pow(x, n) [Leetcode](https://leetcode.com/problems/powx-n/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/recursion/powerFunction.ts)
 
