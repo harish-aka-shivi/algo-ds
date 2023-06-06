@@ -180,7 +180,7 @@ function longestCommonSubsequence(text1: string, text2: string): number {
     IT follows a matrix
 */
 
-function longestCommonSubsequence(text1: string, text2: string): number {
+export const longestCommonSubsequence = (text1: string, text2: string): number => {
   const dp: Array<number[]> = [];
 
   for (let i = 0; i <= text1.length; i++) {
@@ -208,4 +208,50 @@ function longestCommonSubsequence(text1: string, text2: string): number {
   }
 
   return dp[text2.length][text1.length];
-}
+};
+
+//////////////  another simpler way
+// top down approach
+/* 
+  So the logic behind is that:
+
+  take string ABCD and ABEDG
+
+  if (s1[i] = s2[j]) 1 + lcs(s1(i+1), s2(j+1))
+  
+  if two chars are not equal like in subproblem CD and EDG
+  we will take two cases  and take the max of it
+    - C is taken and E is ignored lcs(s1(i), s2(j+ 1))
+    - E is taken and C is ignored lcs(s1(i+1), s2(j))
+*/
+
+const getKey = (i: number, j: number) => {
+  return `${i}_${j}`;
+};
+
+const lcs = (s1: string, s2: string, i: number, j: number, dp: Record<string, number>): number => {
+  if (i === s1.length || j === s2.length) {
+    return 0;
+  }
+
+  const key = getKey(i, j);
+
+  if (dp[key] !== undefined) {
+    return dp[key];
+  }
+
+  if (s1[i] === s2[j]) {
+    const res = 1 + lcs(s1, s2, i + 1, j + 1, dp);
+    dp[key] = res;
+    return res;
+  }
+
+  const option1 = lcs(s1, s2, i + 1, j, dp);
+  const option2 = lcs(s1, s2, i, j + 1, dp);
+
+  const res = Math.max(option1, option2);
+  dp[key] = res;
+  return res;
+};
+
+console.log(lcs('ABCD', 'ABEDG', 0, 0, {}));
