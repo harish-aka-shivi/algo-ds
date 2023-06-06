@@ -29,8 +29,35 @@ Constraints:
 
 Follow up: Can you come up with an algorithm that runs in O(n log(n)) time complexity?
 
+*/
 
+/* 
 
+Solution: eg
+arr = [50, 4, 10, 8, 30, 100, 2]
+
+there will be a dp array and we will start from first element => which will always be 1
+dp = [1]
+
+now we will go to second element and check the previous elements of dp and an put the max of dp elements
+and add 1
+so now dp becomes, since 4 cannot come after 50, also add 1 for it
+dp = [1, 1]
+
+next element is 10 => 10 can't come after 50 => then its one , but it can come after 4 (so 1 + dp[position of 4])
+so dp becomes [1,1,2]
+
+next is 8: 8 can come after 4 only in previous array. so dp
+[1,1,2,2]
+
+next is 30 => can come after 4, 10, 8 => check the dp array values of each value and add 1 and get the max
+max will be 3 with 10 and 8 => 4 10 30 or 4 8 30
+[1,2,2,3]
+
+next 100 and 2
+[1,2,2,3,4, 1]
+
+answer is max of it
 */
 
 function lengthOfLIS(nums: number[]): number {

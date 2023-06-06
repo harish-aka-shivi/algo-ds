@@ -30,7 +30,7 @@ Solutions for leetcode problem that I solve. Language used is typescript
 
 - 1: Two Sum [Leetcode](https://leetcode.com/problems/two-sum/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/arrays/twoSum.ts)
 
-
+- 5:  Longest Palindromic Substring [Leetcode](https://leetcode.com/problems/longest-palindromic-substring/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/arrays/longestPallindromicSubstring.ts)
 
 
 # Data Structures
