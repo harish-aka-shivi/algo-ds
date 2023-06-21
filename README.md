@@ -56,6 +56,11 @@ Solutions for leetcode problem that I solve. Language used is typescript
 
   - 671: Second Minimum Node In a Binary Tree [Leetcode](https://leetcode.com/problems/second-minimum-node-in-a-binary-tree/description/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/9ca16244419ed03b6d2b6f8ebfdf1e59328bbfd5/dataStructures/binaryTree.ts#L294)
 
+### Graph
+  - 207. Course Schedule [Leetcode](https://leetcode.com/problems/course-schedule/description/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/9ca16244419ed03b6d2b6f8ebfdf1e59328bbfd5/graph/courseSchedule.ts)
+
+### Hashmap
+  - 560. Subarray Sum Equals K [Leetcode](https://leetcode.com/problems/subarray-sum-equals-k/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/9ca16244419ed03b6d2b6f8ebfdf1e59328bbfd5/hashmap/kArraySum.ts)
 
 #### Binary Search Tree
   - 701: Insert into a Binary Search Tree [Leetcode](https://leetcode.com/problems/insert-into-a-binary-search-tree/description/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/9ca16244419ed03b6d2b6f8ebfdf1e59328bbfd5/dataStructures/binarySearchTree.ts#L10)
