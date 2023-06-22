@@ -58,6 +58,8 @@ Solutions for leetcode problem that I solve. Language used is typescript
 
 ### Graph
   - 207. Course Schedule [Leetcode](https://leetcode.com/problems/course-schedule/description/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/9ca16244419ed03b6d2b6f8ebfdf1e59328bbfd5/graph/courseSchedule.ts)
+  - 1514. Path with Maximum Probability [Leetcode](https://leetcode.com/problems/path-with-maximum-probability/description/?envType=list&envId=53js48ke) [Solution](https://leetcode.com/problems/course-schedule/description/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/9ca16244419ed03b6d2b6f8ebfdf1e59328bbfd5/graph/maxProbPath.ts)
+
 
 ### Hashmap
   - 560. Subarray Sum Equals K [Leetcode](https://leetcode.com/problems/subarray-sum-equals-k/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/9ca16244419ed03b6d2b6f8ebfdf1e59328bbfd5/hashmap/kArraySum.ts)
