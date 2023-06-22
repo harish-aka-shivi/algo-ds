@@ -32,48 +32,51 @@ Solutions for leetcode problem that I solve. Language used is typescript
 
 - 5:  Longest Palindromic Substring [Leetcode](https://leetcode.com/problems/longest-palindromic-substring/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/arrays/longestPallindromicSubstring.ts)
 
+- 33: Search in Rotated Sorted Array [Leetcode](https://leetcode.com/problems/search-in-rotated-sorted-array/description/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/arrays/rotatedArraySearch.ts)
+ 
+
 
 # Data Structures
 
 #### Binary trees
-  - 144 Binary Tree Preorder Traversal [Leetcode](https://leetcode.com/problems/binary-tree-preorder-traversal/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/9ca16244419ed03b6d2b6f8ebfdf1e59328bbfd5/dataStructures/binaryTree.ts#L26)
+  - 144 Binary Tree Preorder Traversal [Leetcode](https://leetcode.com/problems/binary-tree-preorder-traversal/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/dataStructures/binaryTree.ts#L26)
 
-  - 1008: Construct Binary Search Tree from Preorder Traversal [Leetcode](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/9ca16244419ed03b6d2b6f8ebfdf1e59328bbfd5/dataStructures/binaryTree.ts#L12)
+  - 1008: Construct Binary Search Tree from Preorder Traversal [Leetcode](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/dataStructures/binaryTree.ts#L12)
 
-  - 94. Binary Tree Inorder Traversal [Leetcode](https://leetcode.com/problems/binary-tree-inorder-traversal/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/9ca16244419ed03b6d2b6f8ebfdf1e59328bbfd5/dataStructures/binaryTree.ts#L36)
+  - 94: Binary Tree Inorder Traversal [Leetcode](https://leetcode.com/problems/binary-tree-inorder-traversal/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/dataStructures/binaryTree.ts#L36)
 
-  - 102: Binary Tree Level Order Traversal [Leetcode](https://leetcode.com/problems/binary-tree-level-order-traversal/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/9ca16244419ed03b6d2b6f8ebfdf1e59328bbfd5/dataStructures/binaryTree.ts#L69)
+  - 102: Binary Tree Level Order Traversal [Leetcode](https://leetcode.com/problems/binary-tree-level-order-traversal/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/dataStructures/binaryTree.ts#L69)
 
-  - 104: Maximum Depth of Binary Tree [Leetcode](https://leetcode.com/problems/maximum-depth-of-binary-tree/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/9ca16244419ed03b6d2b6f8ebfdf1e59328bbfd5/dataStructures/binaryTree.ts#L140)
+  - 104: Maximum Depth of Binary Tree [Leetcode](https://leetcode.com/problems/maximum-depth-of-binary-tree/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/dataStructures/binaryTree.ts#L140)
 
-  - 543: Diameter of Binary Tree [Leetcode](https://leetcode.com/problems/diameter-of-binary-tree/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/9ca16244419ed03b6d2b6f8ebfdf1e59328bbfd5/dataStructures/binaryTree.ts#L186)
+  - 543: Diameter of Binary Tree [Leetcode](https://leetcode.com/problems/diameter-of-binary-tree/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/dataStructures/binaryTree.ts#L186)
 
-  - 111: Minimum Depth of Binary Tree [Leetcode](https://leetcode.com/problems/minimum-depth-of-binary-tree/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/9ca16244419ed03b6d2b6f8ebfdf1e59328bbfd5/dataStructures/binaryTree.ts#L201)
+  - 111: Minimum Depth of Binary Tree [Leetcode](https://leetcode.com/problems/minimum-depth-of-binary-tree/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/dataStructures/binaryTree.ts#L201)
 
-  - 101: Symmetric Tree [Leetcode](https://leetcode.com/problems/symmetric-tree/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/9ca16244419ed03b6d2b6f8ebfdf1e59328bbfd5/dataStructures/binaryTree.ts#L236)
+  - 101: Symmetric Tree [Leetcode](https://leetcode.com/problems/symmetric-tree/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/dataStructures/binaryTree.ts#L236)
 
-  - 106: Construct Binary Tree from Inorder and Postorder Traversal [Leetcode](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/9ca16244419ed03b6d2b6f8ebfdf1e59328bbfd5/dataStructures/binaryTree.ts#L252)
+  - 106: Construct Binary Tree from Inorder and Postorder Traversal [Leetcode](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/dataStructures/binaryTree.ts#L252)
 
-  - 671: Second Minimum Node In a Binary Tree [Leetcode](https://leetcode.com/problems/second-minimum-node-in-a-binary-tree/description/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/9ca16244419ed03b6d2b6f8ebfdf1e59328bbfd5/dataStructures/binaryTree.ts#L294)
+  - 671: Second Minimum Node In a Binary Tree [Leetcode](https://leetcode.com/problems/second-minimum-node-in-a-binary-tree/description/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/dataStructures/binaryTree.ts#L294)
 
 ### Graph
-  - 207. Course Schedule [Leetcode](https://leetcode.com/problems/course-schedule/description/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/9ca16244419ed03b6d2b6f8ebfdf1e59328bbfd5/graph/courseSchedule.ts)
-  - 1514. Path with Maximum Probability [Leetcode](https://leetcode.com/problems/path-with-maximum-probability/description/?envType=list&envId=53js48ke) [Solution](https://leetcode.com/problems/course-schedule/description/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/9ca16244419ed03b6d2b6f8ebfdf1e59328bbfd5/graph/maxProbPath.ts)
+  - 207: Course Schedule [Leetcode](https://leetcode.com/problems/course-schedule/description/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/graph/courseSchedule.ts)
+  - 1514: Path with Maximum Probability [Leetcode](https://leetcode.com/problems/path-with-maximum-probability/description/?envType=list&envId=53js48ke) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/graph/maxProbPath.ts)
 
 
 ### Hashmap
-  - 560. Subarray Sum Equals K [Leetcode](https://leetcode.com/problems/subarray-sum-equals-k/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/9ca16244419ed03b6d2b6f8ebfdf1e59328bbfd5/hashmap/kArraySum.ts)
+  - 560: Subarray Sum Equals K [Leetcode](https://leetcode.com/problems/subarray-sum-equals-k/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/hashmap/kArraySum.ts)
 
 #### Binary Search Tree
-  - 701: Insert into a Binary Search Tree [Leetcode](https://leetcode.com/problems/insert-into-a-binary-search-tree/description/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/9ca16244419ed03b6d2b6f8ebfdf1e59328bbfd5/dataStructures/binarySearchTree.ts#L10)
+  - 701: Insert into a Binary Search Tree [Leetcode](https://leetcode.com/problems/insert-into-a-binary-search-tree/description/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/dataStructures/binarySearchTree.ts#L10)
 
-  - 450: Delete Node in a BST [Leetcode](https://leetcode.com/problems/delete-node-in-a-bst/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/9ca16244419ed03b6d2b6f8ebfdf1e59328bbfd5/dataStructures/binarySearchTree.ts#L44)
+  - 450: Delete Node in a BST [Leetcode](https://leetcode.com/problems/delete-node-in-a-bst/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/dataStructures/binarySearchTree.ts#L44)
 
-  - 1008: Construct Binary Search Tree from Preorder Traversal [Leetcode](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/9ca16244419ed03b6d2b6f8ebfdf1e59328bbfd5/dataStructures/binarySearchTree.ts#L73)
+  - 1008: Construct Binary Search Tree from Preorder Traversal [Leetcode](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/dataStructures/binarySearchTree.ts#L73)
 
-  - 226: Invert Binary Tree [Leetcode](https://leetcode.com/problems/invert-binary-tree/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/9ca16244419ed03b6d2b6f8ebfdf1e59328bbfd5/dataStructures/binarySearchTree.ts#L84)
+  - 226: Invert Binary Tree [Leetcode](https://leetcode.com/problems/invert-binary-tree/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/dataStructures/binarySearchTree.ts#L84)
 
-  - 98: Validate Binary Search Tree [Leetcode](https://leetcode.com/problems/validate-binary-search-tree/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/9ca16244419ed03b6d2b6f8ebfdf1e59328bbfd5/dataStructures/binarySearchTree.ts#L130)
+  - 98: Validate Binary Search Tree [Leetcode](https://leetcode.com/problems/validate-binary-search-tree/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/dataStructures/binarySearchTree.ts#L130)
 
 #### Graph
   - Graph using adjacency list implementation | bfs | dfs [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/dataStructures/graph.ts)
@@ -114,14 +117,14 @@ Solutions for leetcode problem that I solve. Language used is typescript
 
   - 2636: Promise Pool [Leetcode](https://leetcode.com/problems/promise-pool/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/nativeJs/promisePool.ts)
 
-  - 2676. Throttle [Leetcode](https://leetcode.com/problems/throttle/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/nativeJs/throttle.ts)
+  - 2676: Throttle [Leetcode](https://leetcode.com/problems/throttle/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/nativeJs/throttle.ts)
 
-  - 2627. Debounce [Leetcode](https://leetcode.com/problems/debounce/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/nativeJs/debounce.ts)
+  - 2627: Debounce [Leetcode](https://leetcode.com/problems/debounce/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/nativeJs/debounce.ts)
 
-  - 2623. Memoize [Leetcode](https://leetcode.com/problems/memoize/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/nativeJs/memoize.ts)
+  - 2623: Memoize [Leetcode](https://leetcode.com/problems/memoize/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/nativeJs/memoize.ts)
 
 # Two Pointer
-  - 125. Valid Palindrome [Leetcode](https://leetcode.com/problems/valid-palindrome/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/twoPointer/palindrome.ts)
+  - 125: Valid Palindrome [Leetcode](https://leetcode.com/problems/valid-palindrome/) [Solution](https://github.com/harish-aka-shivi/algo-ds/blob/main/twoPointer/palindrome.ts)
 
 
 # Recursion
